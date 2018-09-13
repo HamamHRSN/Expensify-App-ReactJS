@@ -24,3 +24,15 @@ git remote -v    -  View Origin repo url for Fetching and pushing
 9- git remote add origin git@github.com/HamamHRSN/Expensify-App.git
 10- git push -u origin master     (for first time and one time only)
 9- adding the two code of new repozetory
+
+
+# To deploying project to heroku 
+1- install heroku cli version for your os system 
+2- chacking version by running   heroku --version
+3- run heroku login     then type email and passowrd 
+4- heroku create ProjectName
+5- git remote -v    to see name of project adding on heroku and github
+6- adding script starting to package.json file    "start": "node server/server.js"
+7- change the port on express to    const port = process.env.PORT || 3000;
+8- adding new script to package.json     "heroku-postbuild": "yarn run build:prod"
+9- ignoring   public/bundle.js  public/bundle.js.map  public/styles.css  public/styles.css.map in .gitignore file
