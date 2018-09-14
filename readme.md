@@ -36,3 +36,7 @@ git remote -v    -  View Origin repo url for Fetching and pushing
 7- change the port on express to    const port = process.env.PORT || 3000;
 8- adding new script to package.json     "heroku-postbuild": "yarn run build:prod"
 9- ignoring   public/bundle.js  public/bundle.js.map  public/styles.css  public/styles.css.map in .gitignore file
+10- git status   then  git add .   then git commit -m "my Commit"   then git push 
+11- git push heroku master
+12- heroku open or by pesting the url 
+13- heroku logs
